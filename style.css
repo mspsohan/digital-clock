@@ -10,15 +10,18 @@
    background: linear-gradient(45deg, #08001f, #301973);
    color: #fff;
    position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
-.container{
-   width: 800px;
+.container {
+   width: 80%;
+   max-width: 800px;
    height: 180px;
    position: absolute;
    top: 50%;
    left: 50%;
    transform: translate(-50%, -50%);
-   
 }
 .clock{
    width: 100%;
@@ -29,7 +32,6 @@
    align-items: center;
    justify-content: center;
    backdrop-filter: blur(40px);
-
 }
 .container::before{
    content: "";
@@ -38,7 +40,7 @@
    background: #f41b75;
    border-radius: 5px;
    position: absolute;
-   left: -50px;
+   left: -30px;
    top: -50px;
    z-index: -1;
 }
@@ -61,7 +63,6 @@
    position: relative;
 }
 .clock span::after{
-   
    font-size: 16px;
    position: absolute;
    bottom: -5px;
